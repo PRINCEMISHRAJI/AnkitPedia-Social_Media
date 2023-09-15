@@ -1,0 +1,18 @@
+{
+  "name": "ankitpedia--mern-social-media",
+  "version": "1.0.0",
+  "description": "ankitpedia- media for bateman fans",
+  "main": "index.js",
+  "scripts": {
+    "install-server" : "cd server && npm install",
+    "install-client" : "cd client && npm install",
+    "start-server": "cd server && nodemon index.js",
+    "build-client" : "cd client && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-client": "cd client && npm run start`"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
