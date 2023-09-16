@@ -18,6 +18,11 @@ import User from "./models/User.js";
 import Post from "./models/Post.js";
 import { users, posts } from "./data/index.js";
 
+//middleware
+const corsOptions = {
+  origin: "https://ankitpedia-sm.onrender.com/", // frontend URI (ReactJS)
+}
+
 /* CONFIGURATIONS */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -33,10 +38,6 @@ app.use(cors());
 app.use(cors(corsOptions));
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 
-//middleware
-const corsOptions = {
-  origin: "https://ankitpedia-sm.onrender.com/", // frontend URI (ReactJS)
-}
 
 /* FILE STORAGE */
 const storage = multer.diskStorage({
