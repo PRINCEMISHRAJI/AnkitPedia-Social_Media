@@ -6,7 +6,7 @@
   "scripts": {
     "install-server" : "cd server && npm install",
     "install-client" : "cd client && npm install",
-    "start-server": "cd server && nodemon index.js",
+    "start-server": "cd server && node index.js",
     "build-client" : "cd client && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-client": "cd client && npm run start`"
