@@ -20,7 +20,7 @@ import { users, posts } from "./data/index.js";
 
 //middleware
 const corsOptions = {
-  origin: "https://ankitpedia-sm.onrender.com/", // frontend URI (ReactJS)
+  origin: "https://ankitpedia-sm.onrender.com", // frontend URI (ReactJS)
 }
 
 /* CONFIGURATIONS */
